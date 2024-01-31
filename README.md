@@ -1,4 +1,4 @@
-# Blast Futures Exchange README
+# Blast Futures Exchange
 
 ## Introduction
 
