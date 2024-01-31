@@ -1,0 +1,737 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "trader",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "poolId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "PooledDeposit",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "contributor",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "individualDeposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "contributor",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Contribution[]",
+          "name": "contributions",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "pooledDeposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "individualDeposit(address,uint256)": "ee74567c",
+    "pooledDeposit((address,uint256)[])": "57a7ce82"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"trader\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"poolId\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"PooledDeposit\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"contributor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"individualDeposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"contributor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"struct Contribution[]\",\"name\":\"contributions\",\"type\":\"tuple[]\"}],\"name\":\"pooledDeposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/IPoolDeposit.sol\":\"IPoolDeposit\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":500000},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/IPoolDeposit.sol\":{\"keccak256\":\"0x4cd50217322bc7d69abe8bc5a488f8eeb8d74330626975667991b38ab90a6f63\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://5f62aa1e46eae994c86492d738e399c488dffb3065ca5781b5a3a36b353bff1b\",\"dweb:/ipfs/Qmd7oCd9hXYBGb899fg66gdN6r3djn958Dc1HVmdwTid4m\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "trader",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "poolId",
+              "type": "uint256",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "Deposit",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "PooledDeposit",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "contributor",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "individualDeposit"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct Contribution[]",
+              "name": "contributions",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "contributor",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "pooledDeposit"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 500000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/IPoolDeposit.sol": "IPoolDeposit"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/IPoolDeposit.sol": {
+        "keccak256": "0x4cd50217322bc7d69abe8bc5a488f8eeb8d74330626975667991b38ab90a6f63",
+        "urls": [
+          "bzz-raw://5f62aa1e46eae994c86492d738e399c488dffb3065ca5781b5a3a36b353bff1b",
+          "dweb:/ipfs/Qmd7oCd9hXYBGb899fg66gdN6r3djn958Dc1HVmdwTid4m"
+        ],
+        "license": "BUSL-1.1"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/IPoolDeposit.sol",
+    "id": 31774,
+    "exportedSymbols": {
+      "Contribution": [
+        31742
+      ],
+      "IPoolDeposit": [
+        31773
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:447:28",
+    "nodes": [
+      {
+        "id": 31737,
+        "nodeType": "PragmaDirective",
+        "src": "37:23:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 31742,
+        "nodeType": "StructDefinition",
+        "src": "62:68:28",
+        "nodes": [],
+        "canonicalName": "Contribution",
+        "members": [
+          {
+            "constant": false,
+            "id": 31739,
+            "mutability": "mutable",
+            "name": "contributor",
+            "nameLocation": "96:11:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 31742,
+            "src": "88:19:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 31738,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "88:7:28",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 31741,
+            "mutability": "mutable",
+            "name": "amount",
+            "nameLocation": "121:6:28",
+            "nodeType": "VariableDeclaration",
+            "scope": 31742,
+            "src": "113:14:28",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 31740,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "113:7:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "Contribution",
+        "nameLocation": "69:12:28",
+        "scope": 31774,
+        "visibility": "public"
+      },
+      {
+        "id": 31773,
+        "nodeType": "ContractDefinition",
+        "src": "133:350:28",
+        "nodes": [
+          {
+            "id": 31752,
+            "nodeType": "EventDefinition",
+            "src": "163:98:28",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "d36a2f67d06d285786f61a32b052b9ace6b0b7abef5177b54358abdc83a0b69b",
+            "name": "Deposit",
+            "nameLocation": "169:7:28",
+            "parameters": {
+              "id": 31751,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31744,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "193:2:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31752,
+                  "src": "177:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31743,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "177:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31746,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "trader",
+                  "nameLocation": "213:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31752,
+                  "src": "197:22:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31745,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "197:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31748,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "229:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31752,
+                  "src": "221:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31747,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "221:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31750,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "253:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31752,
+                  "src": "237:22:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31749,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "237:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "176:84:28"
+            }
+          },
+          {
+            "id": 31758,
+            "nodeType": "EventDefinition",
+            "src": "266:56:28",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "667ed75d7a503a5dc36e11fbc72336a5a2a2b95577a97ecd2aac380f1ac1b640",
+            "name": "PooledDeposit",
+            "nameLocation": "272:13:28",
+            "parameters": {
+              "id": 31757,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31754,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "302:2:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31758,
+                  "src": "286:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31753,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "286:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31756,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "314:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31758,
+                  "src": "306:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31755,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "306:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "285:36:28"
+            }
+          },
+          {
+            "id": 31765,
+            "nodeType": "FunctionDefinition",
+            "src": "332:73:28",
+            "nodes": [],
+            "functionSelector": "ee74567c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "individualDeposit",
+            "nameLocation": "341:17:28",
+            "parameters": {
+              "id": 31763,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31760,
+                  "mutability": "mutable",
+                  "name": "contributor",
+                  "nameLocation": "367:11:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31765,
+                  "src": "359:19:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31759,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "359:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31762,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "388:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31765,
+                  "src": "380:14:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31761,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "380:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "358:37:28"
+            },
+            "returnParameters": {
+              "id": 31764,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "404:0:28"
+            },
+            "scope": 31773,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31772,
+            "nodeType": "FunctionDefinition",
+            "src": "410:71:28",
+            "nodes": [],
+            "functionSelector": "57a7ce82",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pooledDeposit",
+            "nameLocation": "419:13:28",
+            "parameters": {
+              "id": 31770,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31769,
+                  "mutability": "mutable",
+                  "name": "contributions",
+                  "nameLocation": "457:13:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31772,
+                  "src": "433:37:28",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Contribution_$31742_calldata_ptr_$dyn_calldata_ptr",
+                    "typeString": "struct Contribution[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 31767,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 31766,
+                        "name": "Contribution",
+                        "nameLocations": [
+                          "433:12:28"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 31742,
+                        "src": "433:12:28"
+                      },
+                      "referencedDeclaration": 31742,
+                      "src": "433:12:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Contribution_$31742_storage_ptr",
+                        "typeString": "struct Contribution"
+                      }
+                    },
+                    "id": 31768,
+                    "nodeType": "ArrayTypeName",
+                    "src": "433:14:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Contribution_$31742_storage_$dyn_storage_ptr",
+                      "typeString": "struct Contribution[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "432:39:28"
+            },
+            "returnParameters": {
+              "id": 31771,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "480:0:28"
+            },
+            "scope": 31773,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPoolDeposit",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          31773
+        ],
+        "name": "IPoolDeposit",
+        "nameLocation": "143:12:28",
+        "scope": 31774,
+        "usedErrors": [],
+        "usedEvents": [
+          31752,
+          31758
+        ]
+      }
+    ],
+    "license": "BUSL-1.1"
+  },
+  "id": 28
+}
