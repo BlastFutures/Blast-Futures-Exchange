@@ -1,3 +1,11 @@
+# Audit Competition for Blast-Futures-Exchange
+This repository is for the audit competition for the Blast-Futures-Exchange.
+To participate, submit your findings only by using the on-chain submission process on https://app.hats.finance/vulnerability .
+## How to participate
+- follow the instructions on https://app.hats.finance/
+## Good luck!
+We look forward to seeing your findings.
+* * *
 # Blast Futures Exchange
 
 ## Introduction
