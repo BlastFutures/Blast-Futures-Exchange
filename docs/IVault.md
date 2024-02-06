@@ -1,6 +1,6 @@
 # IVault Interface Documentation
 
-The `IVault` interface includes everything that is strictly required by the Bfx exchange.
+The `IVault` interface includes everything that is strictly required by the Bfx exchange when interacting with a vault contract.
 
 ## Interface Overview
 
