@@ -26,10 +26,10 @@ Determines whether a given address is authorized to perform actions within the v
 
 - **Parameters:**
   - `signer`: The address to be verified.
-  - `role`: A specific role identifier used to determine the signer's permissions.
+  - `role`: An integer identifier for a specific role.
 
 - **Returns:**
-  - `bool`: A boolean value indicating whether the address is a valid signer for the specified role.
+  - `bool`: A boolean value indicating whether the signer address is allowed to assume the specified role.
 
 ## Usage
 
