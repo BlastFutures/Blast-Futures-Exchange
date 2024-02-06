@@ -21,11 +21,8 @@ contract Bfx is EIP712Verifier {
     uint256 reentryLockStatus = UNLOCKED;
 
     event Deposit(uint256 indexed id, address indexed trader, uint256 amount);
-    event Withdraw(address indexed trader, uint256 amount);
     event WithdrawTo(address indexed to, uint256 amount);
     event WithdrawalReceipt(uint256 indexed id, address indexed trader, uint256 amount);
-    event UnknownReceipt(uint256 indexed messageType, uint[] payload);
-    event MsgNotFound(uint256 indexed fromAddress, uint[] payload);
 
     modifier onlyOwner() {
         require(msg.sender == owner, "ONLY_OWNER");
