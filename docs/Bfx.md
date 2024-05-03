@@ -4,7 +4,7 @@ The `Bfx` contract facilitates secure deposit and withdrawal of Blast `USDB` ERC
 
 ## Contract Overview
 
-- **SPDX-License-Identifier:** BUSL-1.1
+- **SPDX-License-Identifier:** MIT
 - **Solidity Version:** ^0.8.0
 
 ### Dependencies
