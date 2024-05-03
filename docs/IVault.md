@@ -5,7 +5,7 @@ The `IVault` interface includes everything that is strictly required by the Bfx 
 ## Interface Overview
 
 - **Solidity Version:** ^0.8.0
-- **License:** BUSL-1.1
+- **License:** MIT
 
 ## Events
 
