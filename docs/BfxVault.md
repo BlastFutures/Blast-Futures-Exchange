@@ -4,7 +4,7 @@ The `BfxVault` contract serves as a management layer for user permissions and st
 
 ## Contract Overview
 
-- **SPDX-License-Identifier:** BUSL-1.1
+- **SPDX-License-Identifier:** MIT
 - **Solidity Version:** ^0.8.0
 
 ### Dependencies
