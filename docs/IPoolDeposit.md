@@ -4,7 +4,7 @@ The `IPoolDeposit` interface defines the structure and events for management of 
 
 ## Interface Overview
 
-- **License:** BUSL-1.1
+- **License:** MIT
 - **Solidity Version:** ^0.8.0
 
 ## Structs
