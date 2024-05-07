@@ -49,15 +49,6 @@ contract WithdrawSigningTest is Test, EIP712 {
         });
 
         bytes32 digest = _sigUtils.getTypedDataHash(withdrawal);
-        // bytes32 digest = _hashTypedDataV4(keccak256(abi.encode(
-        //     keccak256("claim(uint256 id,address trader,uint256 amount)"),
-        //     id,
-        //     _claimant,
-        //     amount
-        // )));
-        // assertEq(digest, digest1);
-        // bool hashesEqual = digest == digest1;
-        // console.log("d == d1 %s", hashesEqual);
 
         (uint8 v, bytes32 r, bytes32 s) = vm.sign(_settlerPrivateKey, digest);
 
